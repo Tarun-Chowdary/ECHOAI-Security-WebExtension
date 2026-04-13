@@ -1,5 +1,5 @@
 // ─── State ────────────────────────────────────────────────
-const BACKEND = "http://127.0.0.1:8000/predict";
+const BACKEND = "https://echoai-security-webextension.onrender.com/predict";
 let isScanning = false;
 
 // ─── DOM refs ─────────────────────────────────────────────
@@ -138,7 +138,7 @@ async function handleScan() {
     console.error("[Phishine]", err);
     showError(
       "Backend unreachable",
-      "Make sure the backend is running on port 8000",
+      "Make sure the backend is runnnning and accessible at the configured URL.",
     );
     setStatusDot("error");
   } finally {
