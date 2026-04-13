@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Dark background -->
+  <rect width="128" height="128" rx="22" fill="#0a0d0f"/>
+
+  <!-- Outer subtle glow ring -->
+  <circle cx="64" cy="64" r="56" fill="none" stroke="rgba(0,255,180,0.07)" stroke-width="1"/>
+
+  <!-- Shield body -->
+  <path d="M64 14 L24 32 L24 62 C24 87 41 108 64 116 C87 108 104 87 104 62 L104 32 Z"
+    fill="#0f1419" stroke="rgba(0,255,180,0.35)" stroke-width="1.5"/>
+
+  <!-- Shield inner rim -->
+  <path d="M64 22 L30 38 L30 62 C30 83 44 102 64 109 C84 102 98 83 98 62 L98 38 Z"
+    fill="none" stroke="rgba(0,255,180,0.1)" stroke-width="6"/>
+
+  <!-- Waveform signal -->
+  <polyline
+    points="28,64 36,64 40,48 46,80 51,57 56,69 61,48 67,80 72,57 77,69 82,48 88,80 92,64 100,64"
+    fill="none"
+    stroke="#00ffb4"
+    stroke-width="3.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+
+  <!-- Teal glow center dot -->
+  <circle cx="64" cy="64" r="3" fill="#00ffb4" opacity="0.6"/>
+
+  <!-- Shield tip accent -->
+  <line x1="54" y1="108" x2="74" y2="108" stroke="rgba(0,255,180,0.2)" stroke-width="1"/>
+</svg>
