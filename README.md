@@ -23,27 +23,31 @@ Echo AI Security is a Chrome extension that detects phishing websites in real-ti
 
 ## Features
 
-| | Feature | Description |
-|---|---|---|
-| 🔍 | Real-time detection | Scans URLs instantly on click |
-| 🧠 | ML-powered | Random Forest model trained on URL features |
-| 📊 | Confidence scoring | Shows exact phishing probability |
-| 🎯 | Explainable AI | Tells you *why* a URL was flagged |
-| 🚨 | Warning overlay | Full-page block on high-risk sites |
-| 🎨 | Modern UI | Dashboard-style popup with risk meter |
-| 🔒 | Privacy-first | No data stored, no tracking |
+|     | Feature             | Description                                 |
+| --- | ------------------- | ------------------------------------------- |
+| 🔍  | Real-time detection | Scans URLs instantly on click               |
+| 🧠  | ML-powered          | Random Forest model trained on URL features |
+| 📊  | Confidence scoring  | Shows exact phishing probability            |
+| 🎯  | Explainable AI      | Tells you _why_ a URL was flagged           |
+| 🚨  | Warning overlay     | Full-page block on high-risk sites          |
+| 🎨  | Modern UI           | Dashboard-style popup with risk meter       |
+| 🔒  | Privacy-first       | No data stored, no tracking                 |
 
 ---
 
 ## Screenshots
 
 ### Safe Website Detection
+
 ![Safe detection screenshot](./screenshots/safe.png)
 
 ### Phishing Website Detection
+
 ![Phishing detection screenshot](./screenshots/phishing.png)
 
----
+### Full Page View
+
+## ![Full Extension screenshot](./screenshots/image.png)
 
 ## How It Works
 
@@ -76,16 +80,19 @@ Extension displays result + explanation
 ## Tech Stack
 
 ### Chrome Extension
+
 - HTML · CSS · JavaScript
 - Chrome Extension APIs (Manifest V3)
 
 ### Backend
+
 - **FastAPI** — REST API server
 - **Scikit-learn** — Random Forest classifier
 - **Pandas / NumPy** — Feature engineering
 - **Uvicorn** — ASGI server
 
 ### ML Pipeline
+
 - URL-based feature extraction (16+ features)
 - Probability-based classification
 - Rule-based enhancement layer for edge cases
@@ -95,6 +102,7 @@ Extension displays result + explanation
 ## Installation
 
 ### Prerequisites
+
 - Python 3.10+
 - Google Chrome
 - Git
@@ -162,14 +170,14 @@ const BACKEND = "https://your-backend-url.onrender.com/predict";
 
 The model evaluates these URL characteristics to determine risk:
 
-| Signal | Risk Indicator |
-|---|---|
-| `login`, `verify`, `secure`, `account` in URL | High suspicion |
-| Missing HTTPS | Elevated risk |
-| Excessive special characters (`-`, `_`, `=`, `@`) | Suspicious |
-| Unusually long URL | Common in phishing |
-| IP address instead of domain | Strong indicator |
-| High subdomain count | Obfuscation tactic |
+| Signal                                            | Risk Indicator     |
+| ------------------------------------------------- | ------------------ |
+| `login`, `verify`, `secure`, `account` in URL     | High suspicion     |
+| Missing HTTPS                                     | Elevated risk      |
+| Excessive special characters (`-`, `_`, `=`, `@`) | Suspicious         |
+| Unusually long URL                                | Common in phishing |
+| IP address instead of domain                      | Strong indicator   |
+| High subdomain count                              | Obfuscation tactic |
 
 ---
 
@@ -209,21 +217,16 @@ echo-ai-security/
 
 ---
 
-## Roadmap
+## 📫 Contact / Support
 
-- [ ] Google Safe Browsing API integration
-- [ ] BERT-based deep learning model
-- [ ] Real SHAP explainability graphs in popup
-- [ ] Domain reputation & WHOIS scoring
-- [ ] Firefox extension support
-- [ ] Mobile companion app
+- For questions, suggestions, or support, please open an issue on the [GitHub repository](https://github.com/Tarun-Chowdary/ECHOAI-Security-WebExtension/issues).
+- You can also reach out via email: yegi.2992@gmail.com
 
 ---
 
-## Contact
+## 📄 License
 
-**GitHub:** [github.com/your-username](https://github.com/your-username)  
-**Email:** your-email@example.com
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
